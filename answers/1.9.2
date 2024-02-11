@@ -1,0 +1,6 @@
+
+docker stop djd951/lab-docker-djd951:my-py
+thon-app
+docker rename  djd951/lab-docker-djd951:my-py
+thon-app container_mypythonapp
+docker run -d -p 5000:5000 -e CURRENT_ENVIRONMENT=os.environ container_mypythonapp
